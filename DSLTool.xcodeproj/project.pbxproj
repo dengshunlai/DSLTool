@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2B10591D9D6D2800659FE7 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2B10581D9D6D2800659FE7 /* 1@2x.png */; };
 		DD466BA11D9C0672007E7F91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BA01D9C0672007E7F91 /* main.m */; };
 		DD466BA41D9C0672007E7F91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BA31D9C0672007E7F91 /* AppDelegate.m */; };
 		DD466BA71D9C0672007E7F91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BA61D9C0672007E7F91 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		DD466BAF1D9C0672007E7F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD466BAD1D9C0672007E7F91 /* LaunchScreen.storyboard */; };
 		DD466BBA1D9C0672007E7F91 /* DSLToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BB91D9C0672007E7F91 /* DSLToolTests.m */; };
 		DD466BC51D9C0672007E7F91 /* DSLToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BC41D9C0672007E7F91 /* DSLToolUITests.m */; };
+		DD466BD51D9C06D8007E7F91 /* DSLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BD41D9C06D8007E7F91 /* DSLTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD2B10581D9D6D2800659FE7 /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
 		DD466B9C1D9C0672007E7F91 /* DSLTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSLTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD466BA01D9C0672007E7F91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD466BA21D9C0672007E7F91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		DD466BC01D9C0672007E7F91 /* DSLToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSLToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD466BC41D9C0672007E7F91 /* DSLToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLToolUITests.m; sourceTree = "<group>"; };
 		DD466BC61D9C0672007E7F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD466BD31D9C06D8007E7F91 /* DSLTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLTool.h; sourceTree = "<group>"; };
+		DD466BD41D9C06D8007E7F91 /* DSLTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLTool.m; sourceTree = "<group>"; };
+		DD466BD61D9C075A007E7F91 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		DD466B9E1D9C0672007E7F91 /* DSLTool */ = {
 			isa = PBXGroup;
 			children = (
+				DD466BD21D9C06C7007E7F91 /* DSLTool */,
 				DD466BA21D9C0672007E7F91 /* AppDelegate.h */,
 				DD466BA31D9C0672007E7F91 /* AppDelegate.m */,
 				DD466BA51D9C0672007E7F91 /* ViewController.h */,
@@ -109,6 +116,7 @@
 				DD466BAB1D9C0672007E7F91 /* Assets.xcassets */,
 				DD466BAD1D9C0672007E7F91 /* LaunchScreen.storyboard */,
 				DD466BB01D9C0672007E7F91 /* Info.plist */,
+				DD2B10581D9D6D2800659FE7 /* 1@2x.png */,
 				DD466B9F1D9C0672007E7F91 /* Supporting Files */,
 			);
 			path = DSLTool;
@@ -117,6 +125,7 @@
 		DD466B9F1D9C0672007E7F91 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DD466BD61D9C075A007E7F91 /* PrefixHeader.pch */,
 				DD466BA01D9C0672007E7F91 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +147,15 @@
 				DD466BC61D9C0672007E7F91 /* Info.plist */,
 			);
 			path = DSLToolUITests;
+			sourceTree = "<group>";
+		};
+		DD466BD21D9C06C7007E7F91 /* DSLTool */ = {
+			isa = PBXGroup;
+			children = (
+				DD466BD31D9C06D8007E7F91 /* DSLTool.h */,
+				DD466BD41D9C06D8007E7F91 /* DSLTool.m */,
+			);
+			path = DSLTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +269,7 @@
 			files = (
 				DD466BAF1D9C0672007E7F91 /* LaunchScreen.storyboard in Resources */,
 				DD466BAC1D9C0672007E7F91 /* Assets.xcassets in Resources */,
+				DD2B10591D9D6D2800659FE7 /* 1@2x.png in Resources */,
 				DD466BAA1D9C0672007E7F91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD466BA71D9C0672007E7F91 /* ViewController.m in Sources */,
+				DD466BD51D9C06D8007E7F91 /* DSLTool.m in Sources */,
 				DD466BA41D9C0672007E7F91 /* AppDelegate.m in Sources */,
 				DD466BA11D9C0672007E7F91 /* main.m in Sources */,
 			);
@@ -428,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QTRV8G9WAU;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DSLTool/PrefixHeader.pch";
 				INFOPLIST_FILE = DSLTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dsl.DSLTool;
@@ -440,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QTRV8G9WAU;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DSLTool/PrefixHeader.pch";
 				INFOPLIST_FILE = DSLTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dsl.DSLTool;
@@ -516,6 +538,7 @@
 				DD466BCB1D9C0672007E7F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD466BCC1D9C0672007E7F91 /* Build configuration list for PBXNativeTarget "DSLToolTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +547,7 @@
 				DD466BCE1D9C0672007E7F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD466BCF1D9C0672007E7F91 /* Build configuration list for PBXNativeTarget "DSLToolUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +556,7 @@
 				DD466BD11D9C0672007E7F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
