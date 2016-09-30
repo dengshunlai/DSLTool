@@ -29,4 +29,15 @@
     return [UIImage imageWithCGImage:image.CGImage scale:image.scale orientation:orientation];
 }
 
++ (UIImage *)imageWithImage:(UIImage *)image degree:(CGFloat)degress
+{
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, image.scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextRotateCTM(context, degress * M_PI / 180);
+    [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
 @end

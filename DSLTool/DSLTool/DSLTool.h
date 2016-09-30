@@ -14,4 +14,6 @@
 
 + (UIImage *)imageWithImage:(UIImage *)image orientation:(UIImageOrientation)orientation;
 
++ (UIImage *)imageWithImage:(UIImage *)image degree:(CGFloat)degress;
+
 @end

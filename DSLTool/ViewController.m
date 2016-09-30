@@ -20,21 +20,26 @@
     
     UIImage *image1 = [UIImage imageNamed:@"1"];
     NSLog(@"%ld,%@,%f",CGImageGetWidth(image1.CGImage),NSStringFromCGSize(image1.size),image1.scale);
-    UIImage *newImage = [DSLTool imageWithImage:image1 multiple:0.5];
-    NSLog(@"%ld,%@,%f",CGImageGetWidth(newImage.CGImage),NSStringFromCGSize(newImage.size),newImage.scale);
+    UIImage *image2 = [DSLTool imageWithImage:image1 multiple:0.5];
+    NSLog(@"%ld,%@,%f",CGImageGetWidth(image2.CGImage),NSStringFromCGSize(image2.size),image2.scale);
     
     UIImageView *iv1 = [[UIImageView alloc] initWithImage:image1];
     iv1.frame = CGRectMake(100, 100, image1.size.width, image1.size.height);
     [self.view addSubview:iv1];
     
-    UIImageView *iv2 = [[UIImageView alloc] initWithImage:newImage];
-    iv2.frame = CGRectMake(100, 150, newImage.size.width, newImage.size.height);
+    UIImageView *iv2 = [[UIImageView alloc] initWithImage:image2];
+    iv2.frame = CGRectMake(100, 150, image2.size.width, image2.size.height);
     [self.view addSubview:iv2];
     
-    UIImage *image2 = [DSLTool imageWithImage:image1 orientation:UIImageOrientationUpMirrored];
-    UIImageView *iv3 = [[UIImageView alloc] initWithImage:image2];
-    iv3.frame = CGRectMake(100, 200, image2.size.width, image2.size.height);
+    UIImage *image3 = [DSLTool imageWithImage:image1 orientation:UIImageOrientationUpMirrored];
+    UIImageView *iv3 = [[UIImageView alloc] initWithImage:image3];
+    iv3.frame = CGRectMake(100, 200, image3.size.width, image3.size.height);
     [self.view addSubview:iv3];
+    
+    UIImage *image4 = [DSLTool imageWithImage:image1 degree:45];
+    UIImageView *iv4 = [[UIImageView alloc] initWithImage:image4];
+    iv4.frame = CGRectMake(100, 250, image4.size.width, image4.size.height);
+    [self.view addSubview:iv4];
 }
 
 
