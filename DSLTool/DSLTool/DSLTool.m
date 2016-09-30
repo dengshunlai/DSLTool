@@ -33,8 +33,9 @@
 {
     UIGraphicsBeginImageContextWithOptions(image.size, NO, image.scale);
     CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextTranslateCTM(context, image.size.width / 2, image.size.height / 2);
     CGContextRotateCTM(context, degress * M_PI / 180);
-    [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+    [image drawInRect:CGRectMake(-image.size.width / 2, -image.size.height / 2, image.size.width, image.size.height)];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return newImage;

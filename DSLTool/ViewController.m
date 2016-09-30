@@ -36,7 +36,7 @@
     iv3.frame = CGRectMake(100, 200, image3.size.width, image3.size.height);
     [self.view addSubview:iv3];
     
-    UIImage *image4 = [DSLTool imageWithImage:image1 degree:45];
+    UIImage *image4 = [DSLTool imageWithImage:image1 degree:90];
     UIImageView *iv4 = [[UIImageView alloc] initWithImage:image4];
     iv4.frame = CGRectMake(100, 250, image4.size.width, image4.size.height);
     [self.view addSubview:iv4];
