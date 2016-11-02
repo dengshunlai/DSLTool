@@ -16,7 +16,12 @@
 		DD466BAF1D9C0672007E7F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD466BAD1D9C0672007E7F91 /* LaunchScreen.storyboard */; };
 		DD466BBA1D9C0672007E7F91 /* DSLToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BB91D9C0672007E7F91 /* DSLToolTests.m */; };
 		DD466BC51D9C0672007E7F91 /* DSLToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BC41D9C0672007E7F91 /* DSLToolUITests.m */; };
-		DD466BD51D9C06D8007E7F91 /* DSLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BD41D9C06D8007E7F91 /* DSLTool.m */; };
+		DDDD464E1DCA268F00887088 /* DSLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD46451DCA268F00887088 /* DSLTool.m */; };
+		DDDD464F1DCA268F00887088 /* NSData+DSLAES.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD46471DCA268F00887088 /* NSData+DSLAES.m */; };
+		DDDD46501DCA268F00887088 /* NSString+DSLAES.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD46491DCA268F00887088 /* NSString+DSLAES.m */; };
+		DDDD46511DCA268F00887088 /* NSString+DSLCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD464B1DCA268F00887088 /* NSString+DSLCheck.m */; };
+		DDDD46521DCA268F00887088 /* NSString+DSLHash.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD464D1DCA268F00887088 /* NSString+DSLHash.m */; };
+		DDDD46551DCA282100887088 /* UIImage+DSLExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD46541DCA282100887088 /* UIImage+DSLExtend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +59,19 @@
 		DD466BC01D9C0672007E7F91 /* DSLToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSLToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD466BC41D9C0672007E7F91 /* DSLToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLToolUITests.m; sourceTree = "<group>"; };
 		DD466BC61D9C0672007E7F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD466BD31D9C06D8007E7F91 /* DSLTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLTool.h; sourceTree = "<group>"; };
-		DD466BD41D9C06D8007E7F91 /* DSLTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLTool.m; sourceTree = "<group>"; };
 		DD466BD61D9C075A007E7F91 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DDDD46441DCA268F00887088 /* DSLTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLTool.h; sourceTree = "<group>"; };
+		DDDD46451DCA268F00887088 /* DSLTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLTool.m; sourceTree = "<group>"; };
+		DDDD46461DCA268F00887088 /* NSData+DSLAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DSLAES.h"; sourceTree = "<group>"; };
+		DDDD46471DCA268F00887088 /* NSData+DSLAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DSLAES.m"; sourceTree = "<group>"; };
+		DDDD46481DCA268F00887088 /* NSString+DSLAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSLAES.h"; sourceTree = "<group>"; };
+		DDDD46491DCA268F00887088 /* NSString+DSLAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSLAES.m"; sourceTree = "<group>"; };
+		DDDD464A1DCA268F00887088 /* NSString+DSLCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSLCheck.h"; sourceTree = "<group>"; };
+		DDDD464B1DCA268F00887088 /* NSString+DSLCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSLCheck.m"; sourceTree = "<group>"; };
+		DDDD464C1DCA268F00887088 /* NSString+DSLHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSLHash.h"; sourceTree = "<group>"; };
+		DDDD464D1DCA268F00887088 /* NSString+DSLHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSLHash.m"; sourceTree = "<group>"; };
+		DDDD46531DCA282100887088 /* UIImage+DSLExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DSLExtend.h"; sourceTree = "<group>"; };
+		DDDD46541DCA282100887088 /* UIImage+DSLExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DSLExtend.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +102,7 @@
 		DD466B931D9C0672007E7F91 = {
 			isa = PBXGroup;
 			children = (
-				DD466B9E1D9C0672007E7F91 /* DSLTool */,
+				DD466B9E1D9C0672007E7F91 /* DSLToolExample */,
 				DD466BB81D9C0672007E7F91 /* DSLToolTests */,
 				DD466BC31D9C0672007E7F91 /* DSLToolUITests */,
 				DD466B9D1D9C0672007E7F91 /* Products */,
@@ -104,10 +119,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DD466B9E1D9C0672007E7F91 /* DSLTool */ = {
+		DD466B9E1D9C0672007E7F91 /* DSLToolExample */ = {
 			isa = PBXGroup;
 			children = (
-				DD466BD21D9C06C7007E7F91 /* DSLTool */,
+				DDDD46431DCA268F00887088 /* DSLTool */,
 				DD466BA21D9C0672007E7F91 /* AppDelegate.h */,
 				DD466BA31D9C0672007E7F91 /* AppDelegate.m */,
 				DD466BA51D9C0672007E7F91 /* ViewController.h */,
@@ -119,7 +134,7 @@
 				DD2B10581D9D6D2800659FE7 /* 1@2x.png */,
 				DD466B9F1D9C0672007E7F91 /* Supporting Files */,
 			);
-			path = DSLTool;
+			path = DSLToolExample;
 			sourceTree = "<group>";
 		};
 		DD466B9F1D9C0672007E7F91 /* Supporting Files */ = {
@@ -149,11 +164,21 @@
 			path = DSLToolUITests;
 			sourceTree = "<group>";
 		};
-		DD466BD21D9C06C7007E7F91 /* DSLTool */ = {
+		DDDD46431DCA268F00887088 /* DSLTool */ = {
 			isa = PBXGroup;
 			children = (
-				DD466BD31D9C06D8007E7F91 /* DSLTool.h */,
-				DD466BD41D9C06D8007E7F91 /* DSLTool.m */,
+				DDDD46441DCA268F00887088 /* DSLTool.h */,
+				DDDD46451DCA268F00887088 /* DSLTool.m */,
+				DDDD46531DCA282100887088 /* UIImage+DSLExtend.h */,
+				DDDD46541DCA282100887088 /* UIImage+DSLExtend.m */,
+				DDDD46461DCA268F00887088 /* NSData+DSLAES.h */,
+				DDDD46471DCA268F00887088 /* NSData+DSLAES.m */,
+				DDDD46481DCA268F00887088 /* NSString+DSLAES.h */,
+				DDDD46491DCA268F00887088 /* NSString+DSLAES.m */,
+				DDDD464A1DCA268F00887088 /* NSString+DSLCheck.h */,
+				DDDD464B1DCA268F00887088 /* NSString+DSLCheck.m */,
+				DDDD464C1DCA268F00887088 /* NSString+DSLHash.h */,
+				DDDD464D1DCA268F00887088 /* NSString+DSLHash.m */,
 			);
 			path = DSLTool;
 			sourceTree = "<group>";
@@ -225,7 +250,7 @@
 				TargetAttributes = {
 					DD466B9B1D9C0672007E7F91 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = UJ6ZZAPFYZ;
+						DevelopmentTeam = QTRV8G9WAU;
 						ProvisioningStyle = Automatic;
 					};
 					DD466BB41D9C0672007E7F91 = {
@@ -296,9 +321,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD466BA71D9C0672007E7F91 /* ViewController.m in Sources */,
-				DD466BD51D9C06D8007E7F91 /* DSLTool.m in Sources */,
+				DDDD464E1DCA268F00887088 /* DSLTool.m in Sources */,
+				DDDD464F1DCA268F00887088 /* NSData+DSLAES.m in Sources */,
 				DD466BA41D9C0672007E7F91 /* AppDelegate.m in Sources */,
+				DDDD46511DCA268F00887088 /* NSString+DSLCheck.m in Sources */,
 				DD466BA11D9C0672007E7F91 /* main.m in Sources */,
+				DDDD46501DCA268F00887088 /* NSString+DSLAES.m in Sources */,
+				DDDD46551DCA282100887088 /* UIImage+DSLExtend.m in Sources */,
+				DDDD46521DCA268F00887088 /* NSString+DSLHash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,9 +477,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UJ6ZZAPFYZ;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/DSLTool/PrefixHeader.pch";
-				INFOPLIST_FILE = DSLTool/Info.plist;
+				DEVELOPMENT_TEAM = QTRV8G9WAU;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DSLToolExample/PrefixHeader.pch";
+				INFOPLIST_FILE = DSLToolExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dsl.DSLTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -460,9 +490,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UJ6ZZAPFYZ;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/DSLTool/PrefixHeader.pch";
-				INFOPLIST_FILE = DSLTool/Info.plist;
+				DEVELOPMENT_TEAM = QTRV8G9WAU;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DSLToolExample/PrefixHeader.pch";
+				INFOPLIST_FILE = DSLToolExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dsl.DSLTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";

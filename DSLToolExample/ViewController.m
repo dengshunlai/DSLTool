@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "DSLTool.h"
+//#import "DSLTool.h"
+#import "UIImage+DSLExtend.h"
 
 @interface ViewController ()
 
@@ -20,7 +21,7 @@
     
     UIImage *image1 = [UIImage imageNamed:@"1"];
     NSLog(@"%ld,%@,%f",CGImageGetWidth(image1.CGImage),NSStringFromCGSize(image1.size),image1.scale);
-    UIImage *image2 = [DSLTool imageWithImage:image1 multiple:0.5];
+    UIImage *image2 = [image1 dsl_imageWithMultiple:0.5];
     NSLog(@"%ld,%@,%f",CGImageGetWidth(image2.CGImage),NSStringFromCGSize(image2.size),image2.scale);
     
     UIImageView *iv1 = [[UIImageView alloc] initWithImage:image1];
@@ -31,12 +32,12 @@
     iv2.frame = CGRectMake(100, 150, image2.size.width, image2.size.height);
     [self.view addSubview:iv2];
     
-    UIImage *image3 = [DSLTool imageWithImage:image1 orientation:UIImageOrientationUpMirrored];
+    UIImage *image3 = [image1 dsl_imageWithOrientation:UIImageOrientationUpMirrored];
     UIImageView *iv3 = [[UIImageView alloc] initWithImage:image3];
     iv3.frame = CGRectMake(100, 200, image3.size.width, image3.size.height);
     [self.view addSubview:iv3];
     
-    UIImage *image4 = [DSLTool imageWithImage:image1 degree:90];
+    UIImage *image4 = [image1 dsl_imageWithDegree:45];
     UIImageView *iv4 = [[UIImageView alloc] initWithImage:image4];
     iv4.frame = CGRectMake(100, 250, image4.size.width, image4.size.height);
     [self.view addSubview:iv4];
