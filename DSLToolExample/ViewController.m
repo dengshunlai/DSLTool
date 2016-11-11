@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 //#import "DSLTool.h"
-#import "UIImage+DSLExtend.h"
+#import "UIImage+DSLExtension.h"
 
 @interface ViewController ()
 

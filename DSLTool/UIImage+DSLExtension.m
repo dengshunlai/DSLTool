@@ -1,14 +1,14 @@
 //
-//  UIImage+DSLExtend.m
+//  UIImage+DSLExtension.m
 //  DSLTool
 //
 //  Created by 邓顺来 on 16/11/2.
 //  Copyright © 2016年 邓顺来. All rights reserved.
 //
 
-#import "UIImage+DSLExtend.h"
+#import "UIImage+DSLExtension.h"
 
-@implementation UIImage (DSLExtend)
+@implementation UIImage (DSLExtension)
 
 - (UIImage *)dsl_imageWithMultiple:(CGFloat)multiple
 {

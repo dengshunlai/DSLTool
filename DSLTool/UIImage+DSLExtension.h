@@ -1,5 +1,5 @@
 //
-//  UIImage+DSLExtend.h
+//  UIImage+DSLExtension.h
 //  DSLTool
 //
 //  Created by 邓顺来 on 16/11/2.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (DSLExtend)
+@interface UIImage (DSLExtension)
 
 /**
  放大、缩小
