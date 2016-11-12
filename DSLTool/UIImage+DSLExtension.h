@@ -37,4 +37,23 @@
  */
 - (UIImage *)dsl_imageWithDegree:(CGFloat)degress;
 
+/**
+ 根据颜色创建图像
+ 
+ @param color 图像颜色
+ 
+ @return UIImage
+ */
++ (UIImage *)dsl_imagaWithColor:(UIColor *)color;
+
+/**
+ 根据颜色创建图像
+ 
+ @param color 图像颜色
+ @param size  图像大小
+ 
+ @return UIImage
+ */
++ (UIImage *)dsl_imagaWithColor:(UIColor *)color size:(CGSize)size;
+
 @end
