@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "NSString+DSLAES.h"
 
 @interface DSLToolTests : XCTestCase
 
@@ -22,6 +23,24 @@
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+}
+
+- (void)testAES
+{
+    NSString *key = @"we76sdf898sdfs";
+    NSString *IV = @"8sad6sdf7s9dfd";
+    NSString *orignal = @"<中华人民共和国>a1";
+    NSString *encrypt = [orignal dsl_aes128cbc_base64_encrypt:key iv:IV];
+    NSLog(@"encrypt:%@",encrypt);
+    NSString *decrypt = [encrypt dsl_aes128cbc_base64_decrypt:key iv:IV];
+    NSLog(@"decrypt:%@",decrypt);
+    NSAssert([orignal isEqualToString:decrypt], @"失败");
+    
+    encrypt = [orignal dsl_aes128cbc_hex_encrypt:key iv:IV];
+    NSLog(@"encrypt:%@",encrypt);
+    decrypt = [encrypt dsl_aes128cbc_hex_decrypt:key iv:IV];
+    NSLog(@"decrypt:%@",decrypt);
+    NSAssert([orignal isEqualToString:decrypt], @"失败");
 }
 
 - (void)testExample {

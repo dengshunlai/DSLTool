@@ -14,7 +14,7 @@
 - (NSString *)dsl_aes128cbc_base64_encrypt:(NSString *)key iv:(NSString *)iv;
 {
     const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
-    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    NSData *data = [NSData dataWithBytes:cstr length:strlen(cstr)];
     //对数据进行加密
     NSData *aes = [data dsl_aes128cbc_encrypt:key iv:iv];
     //base64编码
@@ -39,7 +39,7 @@
 - (NSString *)dsl_aes128cbc_hex_encrypt:(NSString *)key iv:(NSString *)iv;
 {
     const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
-    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    NSData *data = [NSData dataWithBytes:cstr length:strlen(cstr)];
     //对数据进行加密
     NSData *aes = [data dsl_aes128cbc_encrypt:key iv:iv];
     //hex编码
