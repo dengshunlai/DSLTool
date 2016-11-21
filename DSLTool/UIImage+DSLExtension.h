@@ -56,4 +56,55 @@
  */
 + (UIImage *)dsl_imagaWithColor:(UIColor *)color size:(CGSize)size;
 
+/**
+ 模糊效果
+
+ @param blurRadius 模糊半径，参考值20
+
+ @return UIImage
+ */
+- (UIImage *)dsl_blurWithRadius:(CGFloat)blurRadius;
+
+/**
+ light模糊
+
+ @param blurRadius 模糊半径
+
+ @return UIImage
+ */
+- (UIImage *)dsl_lightBlurWithRadius:(CGFloat)blurRadius;
+
+/**
+ extraLight模糊
+
+ @param blurRadius 模糊半径
+
+ @return UIImage
+ */
+- (UIImage *)dsl_extraLightBlurWithRadius:(CGFloat)blurRadius;
+
+/**
+ dark模糊
+
+ @param blurRadius 模糊半径
+
+ @return UIImage
+ */
+- (UIImage *)dsl_darkBlurWithRadius:(CGFloat)blurRadius;
+
+/**
+ 完整模糊算法
+
+ @param blurRadius            模糊半径
+ @param tintColor             颜色
+ @param saturationDeltaFactor 饱和度
+ @param maskImage             mask
+
+ @return UIImage
+ */
+- (UIImage *)dsl_blurWithRadius:(CGFloat)blurRadius
+                      tintColor:(UIColor *)tintColor
+          saturationDeltaFactor:(CGFloat)saturationDeltaFactor
+                      maskImage:(UIImage *)maskImage;
+
 @end
