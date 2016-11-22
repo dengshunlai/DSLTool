@@ -23,6 +23,7 @@
 		DD466BAF1D9C0672007E7F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD466BAD1D9C0672007E7F91 /* LaunchScreen.storyboard */; };
 		DD466BBA1D9C0672007E7F91 /* DSLToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BB91D9C0672007E7F91 /* DSLToolTests.m */; };
 		DD466BC51D9C0672007E7F91 /* DSLToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BC41D9C0672007E7F91 /* DSLToolUITests.m */; };
+		DDC50CF71DE4A5E4002814CB /* NSDictionary+DSLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC50CF61DE4A5E4002814CB /* NSDictionary+DSLExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		DD466BC41D9C0672007E7F91 /* DSLToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLToolUITests.m; sourceTree = "<group>"; };
 		DD466BC61D9C0672007E7F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD466BD61D9C075A007E7F91 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DDC50CF51DE4A5E4002814CB /* NSDictionary+DSLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DSLExtension.h"; sourceTree = "<group>"; };
+		DDC50CF61DE4A5E4002814CB /* NSDictionary+DSLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DSLExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				DD42745E1DCB776B00011C31 /* NSString+DSLCheck.m */,
 				DD42745F1DCB776B00011C31 /* NSString+DSLHash.h */,
 				DD4274601DCB776B00011C31 /* NSString+DSLHash.m */,
+				DDC50CF51DE4A5E4002814CB /* NSDictionary+DSLExtension.h */,
+				DDC50CF61DE4A5E4002814CB /* NSDictionary+DSLExtension.m */,
 				DD4274611DCB776B00011C31 /* UIImage+DSLExtension.h */,
 				DD4274621DCB776B00011C31 /* UIImage+DSLExtension.m */,
 			);
@@ -324,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC50CF71DE4A5E4002814CB /* NSDictionary+DSLExtension.m in Sources */,
 				DD466BA71D9C0672007E7F91 /* ViewController.m in Sources */,
 				DD4274631DCB776B00011C31 /* DSLTool.m in Sources */,
 				DD4274641DCB776B00011C31 /* NSData+DSLAES.m in Sources */,
