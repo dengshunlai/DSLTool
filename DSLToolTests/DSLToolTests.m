@@ -8,8 +8,11 @@
 
 #import <XCTest/XCTest.h>
 #import "NSString+DSLAES.h"
+#import "NSDictionary+DSLExtension.h"
 
 @interface DSLToolTests : XCTestCase
+
+@property (strong, nonatomic) NSDictionary *json;
 
 @end
 
@@ -17,7 +20,18 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    _json = @{@"username":[NSNull null],
+              @"phone":@"17630000000",
+              @"age":@(25),
+              @"address":@"深圳市",
+              @"salary":@"10k",
+              @"weight":@"102.25",
+              @"height":@(168.88),
+              @"isMale":@"1",
+              @"parent":@[@{@"mum":@"qqq"},@{@"dad":@"ttt"}],
+              @"school":@{@"name":@"xxx",@"grade":@"yyy"},
+              @"isMarry":[NSNumber numberWithBool:NO],
+              @"pi":[NSNumber numberWithFloat:3.1415]};
 }
 
 - (void)tearDown {
@@ -41,6 +55,32 @@
     decrypt = [encrypt dsl_aes128cbc_hex_decrypt:key iv:IV];
     NSLog(@"decrypt:%@",decrypt);
     NSAssert([orignal isEqualToString:decrypt], @"失败");
+}
+
+- (void)testPropertyCode
+{
+    [_json dsl_propertyCode];
+}
+
+- (void)testSafeDictionary
+{
+    XCTAssert([[_json dsl_stringWithKey:@"name"] isKindOfClass:[NSString class]],@"");
+    NSLog(@"%@",[_json dsl_stringWithKey:@"name"]);
+    NSLog(@"%@",[_json dsl_stringWithKey:@"phone"]);
+    
+    NSLog(@"%ld",[_json dsl_integerWithKey:@"phone"]);
+    NSLog(@"%ld",[_json dsl_integerWithKey:@"age"]);
+    NSLog(@"%ld",[_json dsl_integerWithKey:@"salary"]);
+    
+    NSLog(@"%d",[_json dsl_boolWithKey:@"isMale"]);
+    
+    NSLog(@"%f",[_json dsl_doubleWithKey:@"weight"]);
+    NSLog(@"%f",[_json dsl_doubleWithKey:@"height"]);
+    
+    NSLog(@"%@",[_json dsl_arrayWithKey:@"parent"]);
+    NSLog(@"%@",[_json dsl_dictionaryWithKey:@"school"]);
+    NSLog(@"%@",[_json dsl_arrayWithKey:@"height"]);
+    NSLog(@"%@",[_json dsl_dictionaryWithKey:@"height"]);
 }
 
 - (void)testExample {
