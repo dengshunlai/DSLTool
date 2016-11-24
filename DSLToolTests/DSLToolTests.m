@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "NSString+DSLAES.h"
 #import "NSDictionary+DSLExtension.h"
+#import "NSString+DSLDate.h"
 
 @interface DSLToolTests : XCTestCase
 
@@ -81,6 +82,16 @@
     NSLog(@"%@",[_json dsl_dictionaryWithKey:@"school"]);
     NSLog(@"%@",[_json dsl_arrayWithKey:@"height"]);
     NSLog(@"%@",[_json dsl_dictionaryWithKey:@"height"]);
+}
+
+- (void)testDateString
+{
+    NSString *timestamp = [NSString stringWithFormat:@"%ld",lround([[NSDate date] timeIntervalSince1970])];
+    NSLog(@"%@",timestamp);
+    NSString *dateString = [NSString dsl_dateStringWithTimestamp:timestamp];
+    NSLog(@"%@",dateString);
+    
+    NSLog(@"%@",[dateString dsl_timestamp]);
 }
 
 - (void)testExample {

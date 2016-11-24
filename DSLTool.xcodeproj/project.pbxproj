@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D6CDAAEF1DE2C33E005FBE11 /* netBar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6CDAAEE1DE2C33E005FBE11 /* netBar.jpg */; };
+		D6EA29FD1DE6BB430028C145 /* DSLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EA29F01DE6BB430028C145 /* DSLTool.m */; };
+		D6EA29FE1DE6BB430028C145 /* NSData+DSLAES.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EA29F21DE6BB430028C145 /* NSData+DSLAES.m */; };
+		D6EA29FF1DE6BB430028C145 /* NSDictionary+DSLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EA29F41DE6BB430028C145 /* NSDictionary+DSLExtension.m */; };
+		D6EA2A001DE6BB430028C145 /* NSString+DSLAES.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EA29F61DE6BB430028C145 /* NSString+DSLAES.m */; };
+		D6EA2A011DE6BB430028C145 /* NSString+DSLCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EA29F81DE6BB430028C145 /* NSString+DSLCheck.m */; };
+		D6EA2A021DE6BB430028C145 /* NSString+DSLHash.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EA29FA1DE6BB430028C145 /* NSString+DSLHash.m */; };
+		D6EA2A031DE6BB430028C145 /* UIImage+DSLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EA29FC1DE6BB430028C145 /* UIImage+DSLExtension.m */; };
+		D6EA2A061DE6BBBC0028C145 /* NSString+DSLDate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EA2A051DE6BBBC0028C145 /* NSString+DSLDate.m */; };
+		D6EA2A081DE6C3090028C145 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D6EA2A071DE6C3090028C145 /* README.md */; };
 		DD2B10591D9D6D2800659FE7 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2B10581D9D6D2800659FE7 /* 1@2x.png */; };
-		DD4274631DCB776B00011C31 /* DSLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4274581DCB776B00011C31 /* DSLTool.m */; };
-		DD4274641DCB776B00011C31 /* NSData+DSLAES.m in Sources */ = {isa = PBXBuildFile; fileRef = DD42745A1DCB776B00011C31 /* NSData+DSLAES.m */; };
-		DD4274651DCB776B00011C31 /* NSString+DSLAES.m in Sources */ = {isa = PBXBuildFile; fileRef = DD42745C1DCB776B00011C31 /* NSString+DSLAES.m */; };
-		DD4274661DCB776B00011C31 /* NSString+DSLCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = DD42745E1DCB776B00011C31 /* NSString+DSLCheck.m */; };
-		DD4274671DCB776B00011C31 /* NSString+DSLHash.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4274601DCB776B00011C31 /* NSString+DSLHash.m */; };
-		DD4274681DCB776B00011C31 /* UIImage+DSLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4274621DCB776B00011C31 /* UIImage+DSLExtension.m */; };
 		DD466BA11D9C0672007E7F91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BA01D9C0672007E7F91 /* main.m */; };
 		DD466BA41D9C0672007E7F91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BA31D9C0672007E7F91 /* AppDelegate.m */; };
 		DD466BA71D9C0672007E7F91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BA61D9C0672007E7F91 /* ViewController.m */; };
@@ -23,7 +26,6 @@
 		DD466BAF1D9C0672007E7F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD466BAD1D9C0672007E7F91 /* LaunchScreen.storyboard */; };
 		DD466BBA1D9C0672007E7F91 /* DSLToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BB91D9C0672007E7F91 /* DSLToolTests.m */; };
 		DD466BC51D9C0672007E7F91 /* DSLToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BC41D9C0672007E7F91 /* DSLToolUITests.m */; };
-		DDC50CF71DE4A5E4002814CB /* NSDictionary+DSLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC50CF61DE4A5E4002814CB /* NSDictionary+DSLExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,19 +47,24 @@
 
 /* Begin PBXFileReference section */
 		D6CDAAEE1DE2C33E005FBE11 /* netBar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = netBar.jpg; sourceTree = "<group>"; };
+		D6EA29EF1DE6BB430028C145 /* DSLTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLTool.h; sourceTree = "<group>"; };
+		D6EA29F01DE6BB430028C145 /* DSLTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLTool.m; sourceTree = "<group>"; };
+		D6EA29F11DE6BB430028C145 /* NSData+DSLAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DSLAES.h"; sourceTree = "<group>"; };
+		D6EA29F21DE6BB430028C145 /* NSData+DSLAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DSLAES.m"; sourceTree = "<group>"; };
+		D6EA29F31DE6BB430028C145 /* NSDictionary+DSLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DSLExtension.h"; sourceTree = "<group>"; };
+		D6EA29F41DE6BB430028C145 /* NSDictionary+DSLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DSLExtension.m"; sourceTree = "<group>"; };
+		D6EA29F51DE6BB430028C145 /* NSString+DSLAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSLAES.h"; sourceTree = "<group>"; };
+		D6EA29F61DE6BB430028C145 /* NSString+DSLAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSLAES.m"; sourceTree = "<group>"; };
+		D6EA29F71DE6BB430028C145 /* NSString+DSLCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSLCheck.h"; sourceTree = "<group>"; };
+		D6EA29F81DE6BB430028C145 /* NSString+DSLCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSLCheck.m"; sourceTree = "<group>"; };
+		D6EA29F91DE6BB430028C145 /* NSString+DSLHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSLHash.h"; sourceTree = "<group>"; };
+		D6EA29FA1DE6BB430028C145 /* NSString+DSLHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSLHash.m"; sourceTree = "<group>"; };
+		D6EA29FB1DE6BB430028C145 /* UIImage+DSLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DSLExtension.h"; sourceTree = "<group>"; };
+		D6EA29FC1DE6BB430028C145 /* UIImage+DSLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DSLExtension.m"; sourceTree = "<group>"; };
+		D6EA2A041DE6BBBC0028C145 /* NSString+DSLDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSLDate.h"; sourceTree = "<group>"; };
+		D6EA2A051DE6BBBC0028C145 /* NSString+DSLDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSLDate.m"; sourceTree = "<group>"; };
+		D6EA2A071DE6C3090028C145 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DD2B10581D9D6D2800659FE7 /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
-		DD4274571DCB776B00011C31 /* DSLTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLTool.h; sourceTree = "<group>"; };
-		DD4274581DCB776B00011C31 /* DSLTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLTool.m; sourceTree = "<group>"; };
-		DD4274591DCB776B00011C31 /* NSData+DSLAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DSLAES.h"; sourceTree = "<group>"; };
-		DD42745A1DCB776B00011C31 /* NSData+DSLAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DSLAES.m"; sourceTree = "<group>"; };
-		DD42745B1DCB776B00011C31 /* NSString+DSLAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSLAES.h"; sourceTree = "<group>"; };
-		DD42745C1DCB776B00011C31 /* NSString+DSLAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSLAES.m"; sourceTree = "<group>"; };
-		DD42745D1DCB776B00011C31 /* NSString+DSLCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSLCheck.h"; sourceTree = "<group>"; };
-		DD42745E1DCB776B00011C31 /* NSString+DSLCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSLCheck.m"; sourceTree = "<group>"; };
-		DD42745F1DCB776B00011C31 /* NSString+DSLHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSLHash.h"; sourceTree = "<group>"; };
-		DD4274601DCB776B00011C31 /* NSString+DSLHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSLHash.m"; sourceTree = "<group>"; };
-		DD4274611DCB776B00011C31 /* UIImage+DSLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DSLExtension.h"; sourceTree = "<group>"; };
-		DD4274621DCB776B00011C31 /* UIImage+DSLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DSLExtension.m"; sourceTree = "<group>"; };
 		DD466B9C1D9C0672007E7F91 /* DSLTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSLTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD466BA01D9C0672007E7F91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD466BA21D9C0672007E7F91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,8 +82,6 @@
 		DD466BC41D9C0672007E7F91 /* DSLToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLToolUITests.m; sourceTree = "<group>"; };
 		DD466BC61D9C0672007E7F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD466BD61D9C075A007E7F91 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		DDC50CF51DE4A5E4002814CB /* NSDictionary+DSLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DSLExtension.h"; sourceTree = "<group>"; };
-		DDC50CF61DE4A5E4002814CB /* NSDictionary+DSLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DSLExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,30 +109,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DD4274561DCB776B00011C31 /* DSLTool */ = {
+		D6EA29EE1DE6BB430028C145 /* DSLTool */ = {
 			isa = PBXGroup;
 			children = (
-				DD4274571DCB776B00011C31 /* DSLTool.h */,
-				DD4274581DCB776B00011C31 /* DSLTool.m */,
-				DD4274591DCB776B00011C31 /* NSData+DSLAES.h */,
-				DD42745A1DCB776B00011C31 /* NSData+DSLAES.m */,
-				DD42745B1DCB776B00011C31 /* NSString+DSLAES.h */,
-				DD42745C1DCB776B00011C31 /* NSString+DSLAES.m */,
-				DD42745D1DCB776B00011C31 /* NSString+DSLCheck.h */,
-				DD42745E1DCB776B00011C31 /* NSString+DSLCheck.m */,
-				DD42745F1DCB776B00011C31 /* NSString+DSLHash.h */,
-				DD4274601DCB776B00011C31 /* NSString+DSLHash.m */,
-				DDC50CF51DE4A5E4002814CB /* NSDictionary+DSLExtension.h */,
-				DDC50CF61DE4A5E4002814CB /* NSDictionary+DSLExtension.m */,
-				DD4274611DCB776B00011C31 /* UIImage+DSLExtension.h */,
-				DD4274621DCB776B00011C31 /* UIImage+DSLExtension.m */,
+				D6EA29EF1DE6BB430028C145 /* DSLTool.h */,
+				D6EA29F01DE6BB430028C145 /* DSLTool.m */,
+				D6EA29F11DE6BB430028C145 /* NSData+DSLAES.h */,
+				D6EA29F21DE6BB430028C145 /* NSData+DSLAES.m */,
+				D6EA29F31DE6BB430028C145 /* NSDictionary+DSLExtension.h */,
+				D6EA29F41DE6BB430028C145 /* NSDictionary+DSLExtension.m */,
+				D6EA29F51DE6BB430028C145 /* NSString+DSLAES.h */,
+				D6EA29F61DE6BB430028C145 /* NSString+DSLAES.m */,
+				D6EA29F71DE6BB430028C145 /* NSString+DSLCheck.h */,
+				D6EA29F81DE6BB430028C145 /* NSString+DSLCheck.m */,
+				D6EA29F91DE6BB430028C145 /* NSString+DSLHash.h */,
+				D6EA29FA1DE6BB430028C145 /* NSString+DSLHash.m */,
+				D6EA29FB1DE6BB430028C145 /* UIImage+DSLExtension.h */,
+				D6EA29FC1DE6BB430028C145 /* UIImage+DSLExtension.m */,
+				D6EA2A041DE6BBBC0028C145 /* NSString+DSLDate.h */,
+				D6EA2A051DE6BBBC0028C145 /* NSString+DSLDate.m */,
 			);
 			path = DSLTool;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 		DD466B931D9C0672007E7F91 = {
 			isa = PBXGroup;
 			children = (
+				D6EA2A071DE6C3090028C145 /* README.md */,
+				D6EA29EE1DE6BB430028C145 /* DSLTool */,
 				DD466B9E1D9C0672007E7F91 /* DSLToolExample */,
 				DD466BB81D9C0672007E7F91 /* DSLToolTests */,
 				DD466BC31D9C0672007E7F91 /* DSLToolUITests */,
@@ -148,7 +157,6 @@
 		DD466B9E1D9C0672007E7F91 /* DSLToolExample */ = {
 			isa = PBXGroup;
 			children = (
-				DD4274561DCB776B00011C31 /* DSLTool */,
 				DD466BA21D9C0672007E7F91 /* AppDelegate.h */,
 				DD466BA31D9C0672007E7F91 /* AppDelegate.m */,
 				DD466BA51D9C0672007E7F91 /* ViewController.h */,
@@ -329,16 +337,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDC50CF71DE4A5E4002814CB /* NSDictionary+DSLExtension.m in Sources */,
 				DD466BA71D9C0672007E7F91 /* ViewController.m in Sources */,
-				DD4274631DCB776B00011C31 /* DSLTool.m in Sources */,
-				DD4274641DCB776B00011C31 /* NSData+DSLAES.m in Sources */,
+				D6EA2A001DE6BB430028C145 /* NSString+DSLAES.m in Sources */,
+				D6EA2A011DE6BB430028C145 /* NSString+DSLCheck.m in Sources */,
+				D6EA29FD1DE6BB430028C145 /* DSLTool.m in Sources */,
+				D6EA2A021DE6BB430028C145 /* NSString+DSLHash.m in Sources */,
+				D6EA29FF1DE6BB430028C145 /* NSDictionary+DSLExtension.m in Sources */,
+				D6EA2A081DE6C3090028C145 /* README.md in Sources */,
+				D6EA29FE1DE6BB430028C145 /* NSData+DSLAES.m in Sources */,
+				D6EA2A061DE6BBBC0028C145 /* NSString+DSLDate.m in Sources */,
 				DD466BA41D9C0672007E7F91 /* AppDelegate.m in Sources */,
-				DD4274661DCB776B00011C31 /* NSString+DSLCheck.m in Sources */,
 				DD466BA11D9C0672007E7F91 /* main.m in Sources */,
-				DD4274651DCB776B00011C31 /* NSString+DSLAES.m in Sources */,
-				DD4274681DCB776B00011C31 /* UIImage+DSLExtension.m in Sources */,
-				DD4274671DCB776B00011C31 /* NSString+DSLHash.m in Sources */,
+				D6EA2A031DE6BB430028C145 /* UIImage+DSLExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
