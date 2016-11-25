@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIImage+DSLExtension.h"
+#import "DSLTool.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //[self checkVersion:nil];
     
     UIImage *image1 = [UIImage imageNamed:@"1"];
     NSLog(@"%ld,%@,%f",CGImageGetWidth(image1.CGImage),NSStringFromCGSize(image1.size),image1.scale);
@@ -65,6 +67,23 @@
 //    UIImage *blurNetBar = [_netBar dsl_extraLightBlurWithRadius:sender.value];
 //    UIImage *blurNetBar = [_netBar dsl_darkBlurWithRadius:sender.value];
     _netBarIV.image = blurNetBar;
+}
+
+- (IBAction)checkVersion:(UIButton *)sender {
+    [DSLTool checkAppVersionWithBlock:^(BOOL isNeedUpdate, NSURL *appDownloadURL, NSDictionary *appStoreAppInfo) {
+        if (isNeedUpdate) {
+            //do something
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"发现新版本" message:@"请下载新版本" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *ok = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                //go to app store
+                [[UIApplication sharedApplication] openURL:appDownloadURL];
+                //不更新不给用，关闭程序
+                exit(0);
+            }];
+            [alert addAction:ok];
+            [self presentViewController:alert animated:YES completion:nil];
+        }
+    }];
 }
 
 @end

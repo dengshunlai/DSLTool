@@ -23,10 +23,18 @@
                                     <action selector="changeBlurRadius:" destination="BYZ-38-t0r" eventType="valueChanged" id="D5M-LC-2nn"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejg-VY-HwS">
+                                <state key="normal" title="checkVersion"/>
+                                <connections>
+                                    <action selector="checkVersion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q9H-Nj-DWV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wRX-F3-QiI" firstAttribute="top" secondItem="Ejg-VY-HwS" secondAttribute="bottom" constant="15" id="4LZ-F9-QRh"/>
                             <constraint firstAttribute="trailing" secondItem="wRX-F3-QiI" secondAttribute="trailing" constant="30" id="F0z-2w-Opu"/>
+                            <constraint firstItem="Ejg-VY-HwS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bjZ-h3-Hkw"/>
                             <constraint firstItem="wRX-F3-QiI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="lsb-vi-vtL"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wRX-F3-QiI" secondAttribute="bottom" constant="30" id="zJx-AP-qGc"/>
                         </constraints>

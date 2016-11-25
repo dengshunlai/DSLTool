@@ -10,4 +10,12 @@
 
 @interface DSLTool : NSObject
 
+/**
+ 检测app是否有新版本，
+ 直接调用会被苹果拒绝，可以让后台写个开关接口，等app上线后再打开这个方法
+
+ @param block 是否有新版本，app下载URL，app信息
+ */
++ (void)checkAppVersionWithBlock:(void (^)(BOOL isNeedUpdate, NSURL *appDownloadURL, NSDictionary *appStoreAppInfo))block;
+
 @end
