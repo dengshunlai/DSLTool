@@ -22,11 +22,16 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             if (!error) {
                 NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+                if (![json[@"results"] count]) {
+                    block(NO, nil, nil);
+                    return ;
+                }
                 NSDictionary *result = json[@"results"][0];
                 NSURL *appDownloadURL = [NSURL URLWithString:result[@"trackViewUrl"]];
                 NSString *appStoreAppVersion = result[@"version"];
                 if ([appStoreAppVersion compare:currentVersion options:NSNumericSearch] == NSOrderedDescending) {
                     block(YES, appDownloadURL, result);
+                    return ;
                 }
                 block(NO, appDownloadURL, result);
             } else {

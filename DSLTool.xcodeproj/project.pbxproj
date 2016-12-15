@@ -266,7 +266,7 @@
 				TargetAttributes = {
 					DD466B9B1D9C0672007E7F91 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = UJ6ZZAPFYZ;
+						DevelopmentTeam = QTRV8G9WAU;
 						ProvisioningStyle = Automatic;
 					};
 					DD466BB41D9C0672007E7F91 = {
@@ -497,11 +497,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UJ6ZZAPFYZ;
+				DEVELOPMENT_TEAM = QTRV8G9WAU;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DSLToolExample/PrefixHeader.pch";
 				INFOPLIST_FILE = DSLToolExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.am.qwb;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsl.tool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -510,11 +510,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UJ6ZZAPFYZ;
+				DEVELOPMENT_TEAM = QTRV8G9WAU;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DSLToolExample/PrefixHeader.pch";
 				INFOPLIST_FILE = DSLToolExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.am.qwb;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dsl.tool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
