@@ -8,6 +8,7 @@
 
 #import "NSString+DSLAES.h"
 #import "NSData+DSLAES.h"
+#import "NSData+DSLExtension.h"
 
 @implementation NSString (DSLAES)
 
@@ -44,12 +45,7 @@
     NSData *aes = [data dsl_aes128cbc_encrypt:key iv:iv];
     //hex编码
     if (aes && aes.length > 0) {
-        Byte *datas = (Byte *)[aes bytes];
-        NSMutableString *hex = [NSMutableString stringWithCapacity:aes.length * 2];
-        for(int i = 0; i < aes.length; i++){
-            [hex appendFormat:@"%02x", datas[i]];
-        }
-        return hex;
+        return [aes dsl_hex];
     }
     return nil;
 }

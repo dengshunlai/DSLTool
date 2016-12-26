@@ -26,6 +26,8 @@
 		DD466BAF1D9C0672007E7F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD466BAD1D9C0672007E7F91 /* LaunchScreen.storyboard */; };
 		DD466BBA1D9C0672007E7F91 /* DSLToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BB91D9C0672007E7F91 /* DSLToolTests.m */; };
 		DD466BC51D9C0672007E7F91 /* DSLToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BC41D9C0672007E7F91 /* DSLToolUITests.m */; };
+		DDF2E0F31E1136F80024078F /* NSString+DSLRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF2E0F21E1136F80024078F /* NSString+DSLRSA.m */; };
+		DDF2E0F61E1176BB0024078F /* NSData+DSLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF2E0F51E1176BB0024078F /* NSData+DSLExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,10 @@
 		DD466BC41D9C0672007E7F91 /* DSLToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLToolUITests.m; sourceTree = "<group>"; };
 		DD466BC61D9C0672007E7F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD466BD61D9C075A007E7F91 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DDF2E0F11E1136F80024078F /* NSString+DSLRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSLRSA.h"; sourceTree = "<group>"; };
+		DDF2E0F21E1136F80024078F /* NSString+DSLRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSLRSA.m"; sourceTree = "<group>"; };
+		DDF2E0F41E1176BB0024078F /* NSData+DSLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DSLExtension.h"; sourceTree = "<group>"; };
+		DDF2E0F51E1176BB0024078F /* NSData+DSLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DSLExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,10 @@
 				D6EA29FC1DE6BB430028C145 /* UIImage+DSLExtension.m */,
 				D6EA2A041DE6BBBC0028C145 /* NSString+DSLDate.h */,
 				D6EA2A051DE6BBBC0028C145 /* NSString+DSLDate.m */,
+				DDF2E0F11E1136F80024078F /* NSString+DSLRSA.h */,
+				DDF2E0F21E1136F80024078F /* NSString+DSLRSA.m */,
+				DDF2E0F41E1176BB0024078F /* NSData+DSLExtension.h */,
+				DDF2E0F51E1176BB0024078F /* NSData+DSLExtension.m */,
 			);
 			path = DSLTool;
 			sourceTree = "<group>";
@@ -271,7 +281,7 @@
 					};
 					DD466BB41D9C0672007E7F91 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = UJ6ZZAPFYZ;
+						DevelopmentTeam = QTRV8G9WAU;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DD466B9B1D9C0672007E7F91;
 					};
@@ -344,6 +354,8 @@
 				D6EA2A021DE6BB430028C145 /* NSString+DSLHash.m in Sources */,
 				D6EA29FF1DE6BB430028C145 /* NSDictionary+DSLExtension.m in Sources */,
 				D6EA2A081DE6C3090028C145 /* README.md in Sources */,
+				DDF2E0F31E1136F80024078F /* NSString+DSLRSA.m in Sources */,
+				DDF2E0F61E1176BB0024078F /* NSData+DSLExtension.m in Sources */,
 				D6EA29FE1DE6BB430028C145 /* NSData+DSLAES.m in Sources */,
 				D6EA2A061DE6BBBC0028C145 /* NSString+DSLDate.m in Sources */,
 				DD466BA41D9C0672007E7F91 /* AppDelegate.m in Sources */,
@@ -523,7 +535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = UJ6ZZAPFYZ;
+				DEVELOPMENT_TEAM = QTRV8G9WAU;
 				INFOPLIST_FILE = DSLToolTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dsl.DSLToolTests;
@@ -536,7 +548,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = UJ6ZZAPFYZ;
+				DEVELOPMENT_TEAM = QTRV8G9WAU;
 				INFOPLIST_FILE = DSLToolTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dsl.DSLToolTests;

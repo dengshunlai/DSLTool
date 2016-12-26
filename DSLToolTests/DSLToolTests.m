@@ -10,6 +10,8 @@
 #import "NSString+DSLAES.h"
 #import "NSDictionary+DSLExtension.h"
 #import "NSString+DSLDate.h"
+#import "NSString+DSLRSA.h"
+#import "NSData+DSLExtension.h"
 
 @interface DSLToolTests : XCTestCase
 
@@ -92,6 +94,17 @@
     NSLog(@"%@",dateString);
     
     NSLog(@"%@",[dateString dsl_timestamp]);
+}
+
+- (void)testRSA
+{
+    __block SecKeyRef publicKey,privateKey;
+    [NSString dsl_createRSAKeyPairWithKeySize:1024 handle:^(SecKeyRef publicKeyRef, SecKeyRef privateKeyRef) {
+        publicKey = publicKeyRef;
+        privateKey = privateKeyRef;
+    }];
+    NSLog(@"publicKey:%@",publicKey);
+    NSLog(@"privateKey:%@",privateKey);
 }
 
 - (void)testExample {
