@@ -19,7 +19,6 @@
     status = SecKeyGeneratePair((CFDictionaryRef)@{(id)kSecAttrKeyType:(id)kSecAttrKeyTypeRSA,(id)kSecAttrKeySizeInBits:@(keySize)},
                                 &publicKeyRef,
                                 &privateKeyRef);
-    NSAssert(status == errSecSuccess, @"密钥对生成失败：%d",status);
     if (handle) {
         handle(publicKeyRef,privateKeyRef);
     }

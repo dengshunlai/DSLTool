@@ -12,6 +12,7 @@
 #import "NSString+DSLDate.h"
 #import "NSString+DSLRSA.h"
 #import "NSData+DSLExtension.h"
+#import "DSLTool.h"
 
 @interface DSLToolTests : XCTestCase
 
@@ -105,6 +106,13 @@
     }];
     NSLog(@"publicKey:%@",publicKey);
     NSLog(@"privateKey:%@",privateKey);
+}
+
+- (void)testUUID
+{
+    //8-4-4-4-12
+    NSString *uuid = [DSLTool uuid];
+    NSLog(@"%@",uuid);
 }
 
 - (void)testExample {

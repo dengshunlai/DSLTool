@@ -18,4 +18,9 @@
  */
 + (void)checkAppVersionWithBlock:(void (^)(BOOL isNeedUpdate, NSURL *appDownloadURL, NSDictionary *appStoreAppInfo))block;
 
+/**
+ 生成uuid
+ */
++ (NSString *)uuid;
+
 @end
