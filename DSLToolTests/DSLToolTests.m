@@ -112,7 +112,7 @@
 {
     //8-4-4-4-12
     NSString *uuid = [DSLTool uuid];
-    NSLog(@"%@",uuid);
+    NSLog(@"uuid:%@",uuid);
 }
 
 - (void)testExample {
