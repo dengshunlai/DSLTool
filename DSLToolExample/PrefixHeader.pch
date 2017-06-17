@@ -39,4 +39,18 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 #define WEAK_OBJ(obj) __weak typeof(obj) weak_##obj = obj;
 #define STRONG_OBJ(obj) __strong typeof(obj) obj = weak_##obj;
 
+#define BG_COLOR UIColorFromRGB(0xf2f2f2)
+#define LINE_COLOR UIColorFromRGB(0xe4e4e4)
+#define RED_COLOR UIColorFromRGB(0xf0504c)
+#define BLUE_COLOR UIColorFromRGB(0x0080ff)
+#define YELLOW_COLOR UIColorFromRGB(0xFFC939)
+#define ORANGE_COLOR UIColorFromRGB(0xff8331)
+#define SEARCH_COLOR UIColorFromRGB(0xf7f4ef)
+#define X3_COLOR UIColorFromRGB(0x333333)
+#define X6_COLOR UIColorFromRGB(0x666666)
+#define X9_COLOR UIColorFromRGB(0x999999)
+#define PLACEHOLDER_COLOR UIColorFromRGB(0xefefef)
+#define ICON_COLOR UIColorFromRGB(0x69655E)
+#define GREEN_COLOR UIColorFromRGB(0x6FBB2F)
+
 #endif /* PrefixHeader_pch */
