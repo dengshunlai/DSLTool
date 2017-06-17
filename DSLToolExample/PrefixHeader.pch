@@ -9,6 +9,8 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#import <UIKit/UIKit.h>
+
 #ifdef DEBUG
 #define NSLog(...) NSLog(__VA_ARGS__)
 #define printMethod() NSLog(@"%s", __func__)
