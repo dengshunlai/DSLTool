@@ -115,6 +115,20 @@
     NSLog(@"uuid:%@",uuid);
 }
 
+- (void)testGetDeviceName
+{
+    NSString *name = [DSLTool deviceName];
+    NSLog(@"device name :%@",name);
+}
+
+- (void)testImageType
+{
+    NSString *type = [DSLTool typeForImageData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"placeholder" ofType:@"jpg"]]];
+    //我将placeholder这张图的后缀强制改成jpg，但它的实际类型是png。
+    //图片的类型不是由文件后缀决定的
+    NSLog(@"image type :%@",type);
+}
+
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.

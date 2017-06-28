@@ -23,4 +23,14 @@
  */
 + (NSString *)uuid;
 
+/**
+ 返回设备名称
+ */
++ (NSString *)deviceName;
+
+/**
+ 获取图片的实际类型，返回nil表示未知类型
+ */
++ (NSString *)typeForImageData:(NSData *)data;
+
 @end
