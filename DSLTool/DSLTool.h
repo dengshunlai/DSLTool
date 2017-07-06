@@ -33,4 +33,9 @@
  */
 + (NSString *)typeForImageData:(NSData *)data;
 
+/**
+ 返回正在显示的ViewController
+ */
++ (UIViewController *)topViewController;
+
 @end

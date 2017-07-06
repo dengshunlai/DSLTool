@@ -8,6 +8,7 @@
 
 #import "DSLTool.h"
 #import <sys/utsname.h>
+#import "AppDelegate.h"
 
 @implementation DSLTool
 
@@ -137,6 +138,34 @@
         }
     }
     return nil;
+}
+
++ (UIViewController *)topViewController {
+    UIViewController *topVC = nil;
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    UIWindow *mainWindow = appDelegate.window;
+    
+    UIViewController *lastPresentedVC = mainWindow.rootViewController;
+    while (lastPresentedVC.presentedViewController) {
+        lastPresentedVC = lastPresentedVC.presentedViewController;
+    }
+    
+    if ([lastPresentedVC isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *nc = (UINavigationController *)lastPresentedVC;
+        topVC = nc.visibleViewController;
+    } else if ([lastPresentedVC isKindOfClass:[UITabBarController class]]) {
+        UITabBarController *tc = (UITabBarController *)lastPresentedVC;
+        UIViewController *vc = tc.viewControllers[tc.selectedIndex];
+        if ([vc isKindOfClass:[UINavigationController class]]) {
+            UINavigationController *nc = (UINavigationController *)vc;
+            topVC = nc.visibleViewController;
+        } else {
+            topVC = vc;
+        }
+    } else {
+        topVC = lastPresentedVC;
+    }
+    return topVC;
 }
 
 @end
