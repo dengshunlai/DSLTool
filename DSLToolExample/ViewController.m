@@ -47,11 +47,28 @@
     iv4.frame = CGRectMake(260, 70, image4.size.width, image4.size.height);
     [self.view addSubview:iv4];
     
+    
+    UIImage *search = [UIImage imageNamed:@"search"];
+    UIImageView *searchIV = [[UIImageView alloc] initWithImage:search];
+    searchIV.frame = CGRectMake(20, 140, search.size.width, search.size.height);
+    [self.view addSubview:searchIV];
+    
+    UIImage *search1 = [search dsl_imageWithColor:[UIColor orangeColor]];
+    UIImageView *searchIV1 = [[UIImageView alloc] initWithImage:search1];
+    searchIV1.frame = CGRectMake(100, 140, search1.size.width, search1.size.height);
+    [self.view addSubview:searchIV1];
+    
+    UIImage *search2 = [search dsl_imageWithColor:[UIColor purpleColor]];
+    UIImageView *searchIV2 = [[UIImageView alloc] initWithImage:search2];
+    searchIV2.frame = CGRectMake(180, 140, search2.size.width, search2.size.height);
+    [self.view addSubview:searchIV2];
+    
+    
     _netBar = [UIImage imageNamed:@"netBar.jpg"];
     _netBarIV = [[UIImageView alloc] init];
     _netBarIV.contentMode = UIViewContentModeScaleAspectFill;
     _netBarIV.clipsToBounds = YES;
-    _netBarIV.frame = CGRectMake(20, 150, 300, 200);
+    _netBarIV.frame = CGRectMake(20, 200, 300, 200);
     [self.view addSubview:_netBarIV];
     [self changeBlurRadius:_slider];
 }

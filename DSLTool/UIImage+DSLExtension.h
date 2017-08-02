@@ -57,6 +57,15 @@
 + (UIImage *)dsl_imagaWithColor:(UIColor *)color size:(CGSize)size;
 
 /**
+ 重新渲染图片为某种单一的颜色
+
+ @param color 图片颜色
+ @return UIImage
+ */
+- (UIImage *)dsl_imageWithColor:(UIColor *)color;
+
+
+/**
  模糊效果
 
  @param blurRadius 模糊半径，参考值20

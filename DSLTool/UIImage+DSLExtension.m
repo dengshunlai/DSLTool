@@ -64,6 +64,23 @@
     return image;
 }
 
+- (UIImage *)dsl_imageWithColor:(UIColor *)color
+{
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextTranslateCTM(context, 0, self.size.height);
+    CGContextScaleCTM(context, 1.0, -1.0);
+    CGRect rect = CGRectMake(0, 0, self.size.width, self.size.height);
+    CGContextClipToMask(context, rect, self.CGImage);
+    [color setFill];
+    CGContextFillRect(context, rect);
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+#pragma mark - blur
+
 - (UIImage *)dsl_blurWithRadius:(CGFloat)blurRadius
 {
     return [self dsl_blurWithRadius:blurRadius tintColor:nil saturationDeltaFactor:1.4 maskImage:nil];

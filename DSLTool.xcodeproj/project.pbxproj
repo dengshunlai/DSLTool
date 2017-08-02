@@ -27,6 +27,7 @@
 		DD466BAF1D9C0672007E7F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD466BAD1D9C0672007E7F91 /* LaunchScreen.storyboard */; };
 		DD466BBA1D9C0672007E7F91 /* DSLToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BB91D9C0672007E7F91 /* DSLToolTests.m */; };
 		DD466BC51D9C0672007E7F91 /* DSLToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD466BC41D9C0672007E7F91 /* DSLToolUITests.m */; };
+		DD671EBF1F31CF250038E1CF /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD671EBE1F31CF250038E1CF /* search@2x.png */; };
 		DDF2E0F31E1136F80024078F /* NSString+DSLRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF2E0F21E1136F80024078F /* NSString+DSLRSA.m */; };
 		DDF2E0F61E1176BB0024078F /* NSData+DSLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF2E0F51E1176BB0024078F /* NSData+DSLExtension.m */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,7 @@
 		DD466BC41D9C0672007E7F91 /* DSLToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLToolUITests.m; sourceTree = "<group>"; };
 		DD466BC61D9C0672007E7F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD466BD61D9C075A007E7F91 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DD671EBE1F31CF250038E1CF /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
 		DDF2E0F11E1136F80024078F /* NSString+DSLRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSLRSA.h"; sourceTree = "<group>"; };
 		DDF2E0F21E1136F80024078F /* NSString+DSLRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSLRSA.m"; sourceTree = "<group>"; };
 		DDF2E0F41E1176BB0024078F /* NSData+DSLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DSLExtension.h"; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				DD466BAD1D9C0672007E7F91 /* LaunchScreen.storyboard */,
 				DD466BB01D9C0672007E7F91 /* Info.plist */,
 				DD2B10581D9D6D2800659FE7 /* 1@2x.png */,
+				DD671EBE1F31CF250038E1CF /* search@2x.png */,
 				D6CDAAEE1DE2C33E005FBE11 /* netBar.jpg */,
 				DD44C8BE1F037D4A0030EE1B /* placeholder.jpg */,
 				DD466B9F1D9C0672007E7F91 /* Supporting Files */,
@@ -326,6 +329,7 @@
 				DD466BAF1D9C0672007E7F91 /* LaunchScreen.storyboard in Resources */,
 				DD466BAC1D9C0672007E7F91 /* Assets.xcassets in Resources */,
 				DD2B10591D9D6D2800659FE7 /* 1@2x.png in Resources */,
+				DD671EBF1F31CF250038E1CF /* search@2x.png in Resources */,
 				DD466BAA1D9C0672007E7F91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
