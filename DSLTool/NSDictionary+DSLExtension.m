@@ -73,8 +73,7 @@
     return @{};
 }
 
-- (void)dsl_propertyCode
-{
+- (void)dsl_propertyCode {
     NSMutableString *codes = [NSMutableString string];
     [self enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         NSString *code = @"";
@@ -104,6 +103,23 @@
         [codes appendFormat:@"\n%@",code];
     }];
     NSLog(@"%@",codes);
+}
+
+- (NSString *)dsl_sortForSign {
+    NSMutableString *sign = @"".mutableCopy;
+    NSArray *keys = self.allKeys;
+    keys = [keys sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        return [obj1 compare:obj2 options:NSNumericSearch];
+    }];
+    for (NSInteger i = 0; i < keys.count; i++) {
+        NSString *key = keys[i];
+        id value = self[keys[i]];
+        if ([value isKindOfClass:[NSNumber class]]) {
+            value = [value stringValue];
+        }
+        [sign appendFormat:@"%@%@",key,value];
+    }
+    return sign;
 }
 
 @end

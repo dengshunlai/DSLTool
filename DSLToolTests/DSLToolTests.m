@@ -43,8 +43,7 @@
     [super tearDown];
 }
 
-- (void)testAES
-{
+- (void)testAES {
     NSString *key = @"we76sdf898sdfs";
     NSString *IV = @"8sad6sdf7s9dfd";
     NSString *orignal = @"<中华人民共和国>a1";
@@ -61,13 +60,11 @@
     NSAssert([orignal isEqualToString:decrypt], @"失败");
 }
 
-- (void)testPropertyCode
-{
+- (void)testPropertyCode {
     [_json dsl_propertyCode];
 }
 
-- (void)testSafeDictionary
-{
+- (void)testSafeDictionary {
     XCTAssert([[_json dsl_stringWithKey:@"name"] isKindOfClass:[NSString class]],@"");
     NSLog(@"%@",[_json dsl_stringWithKey:@"name"]);
     NSLog(@"%@",[_json dsl_stringWithKey:@"phone"]);
@@ -87,8 +84,7 @@
     NSLog(@"%@",[_json dsl_dictionaryWithKey:@"height"]);
 }
 
-- (void)testDateString
-{
+- (void)testDateString {
     NSString *timestamp = [NSString stringWithFormat:@"%ld",lround([[NSDate date] timeIntervalSince1970])];
     NSLog(@"%@",timestamp);
     NSString *dateString = [NSString dsl_dateStringWithTimestamp:timestamp];
@@ -97,8 +93,7 @@
     NSLog(@"%@",[dateString dsl_timestamp]);
 }
 
-- (void)testRSA
-{
+- (void)testRSA {
     __block SecKeyRef publicKey,privateKey;
     [NSString dsl_createRSAKeyPairWithKeySize:1024 handle:^(SecKeyRef publicKeyRef, SecKeyRef privateKeyRef) {
         publicKey = publicKeyRef;
@@ -108,25 +103,32 @@
     NSLog(@"privateKey:%@",privateKey);
 }
 
-- (void)testUUID
-{
+- (void)testUUID {
     //8-4-4-4-12
     NSString *uuid = [DSLTool uuid];
     NSLog(@"uuid:%@",uuid);
 }
 
-- (void)testGetDeviceName
-{
+- (void)testGetDeviceName {
     NSString *name = [DSLTool deviceName];
     NSLog(@"device name :%@",name);
 }
 
-- (void)testImageType
-{
+- (void)testImageType {
     NSString *type = [DSLTool typeForImageData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"placeholder" ofType:@"jpg"]]];
     //我将placeholder这张图的后缀强制改成jpg，但它的实际类型是png。
     //图片的类型不是由文件后缀决定的
     NSLog(@"image type :%@",type);
+}
+
+- (void)testSortForSign {
+    NSDictionary *params = @{@"foo":@"1",
+                             @"bar":@"2",
+                             @"foo_bar":@(3),
+                             @"foobar":@"4"};
+    NSString *sign = [params dsl_sortForSign];
+    NSLog(@"%@",sign);
+    XCTAssert([sign isEqualToString:@"bar2foo1foo_bar3foobar4"]);
 }
 
 - (void)testExample {
