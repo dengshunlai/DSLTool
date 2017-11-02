@@ -13,7 +13,7 @@
 
 - (NSData *)dsl_aes128cbc_encrypt:(NSString *)key iv:(NSString *)iv
 {
-    char keyPtr[kCCKeySizeAES128+1];
+    char keyPtr[kCCKeySizeAES128+1];//+1 末位的'\0'
     bzero(keyPtr, sizeof(keyPtr));
     [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
     NSUInteger dataLength = [self length];
@@ -53,7 +53,6 @@
     NSData *AES;
     if (cryptStatus == kCCSuccess) {
         AES = [NSData dataWithBytesNoCopy:buffer length:numBytesDecrypted];
-        
     }
     return AES;
 }

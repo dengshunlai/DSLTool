@@ -44,8 +44,8 @@
 }
 
 - (void)testAES {
-    NSString *key = @"we76sdf898sdfs";
-    NSString *IV = @"8sad6sdf7s9dfd";
+    NSString *key = @"we76sdf898sdfs1515de89fg2h154erd";
+    NSString *IV =  @"8sad6sdf7s9dfd1e";
     NSString *orignal = @"<中华人民共和国>a1";
     NSString *encrypt = [orignal dsl_aes128cbc_base64_encrypt:key iv:IV];
     NSLog(@"encrypt:%@",encrypt);
