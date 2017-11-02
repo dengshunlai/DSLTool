@@ -13,7 +13,7 @@
 
 - (NSData *)dsl_aes128cbc_encrypt:(NSString *)key iv:(NSString *)iv
 {
-    char keyPtr[kCCKeySizeAES128*2+1];//+1 末位的'\0'
+    char keyPtr[kCCKeySizeAES128+1];//+1 末位的'\0'
     bzero(keyPtr, sizeof(keyPtr));
     [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
     NSUInteger dataLength = [self length];
@@ -36,7 +36,7 @@
 
 - (NSData *)dsl_aes128cbc_decrypt:(NSString *)key iv:(NSString *)iv
 {
-    char keyPtr[kCCKeySizeAES128*2+1];
+    char keyPtr[kCCKeySizeAES128+1];
     bzero(keyPtr, sizeof(keyPtr));
     [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
     NSUInteger dataLength = [self length];
