@@ -23,6 +23,11 @@
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define kScreenCenter CGPointMake(kScreenWidth / 2, kScreenHeight / 2)
 
+#define kScreenShorter (kScreenWidth < kScreenHeight ? kScreenWidth : kScreenHeight)
+#define kScreenLonger (kScreenWidth < kScreenHeight ? kScreenHeight : kScreenWidth)
+
+#define NAVIGATION_HEIGHT (CGRectGetHeight([[UIApplication sharedApplication] statusBarFrame]) + CGRectGetHeight(self.navigationController.navigationBar.frame))
+
 #define UIColorFromRGB(rgbValue) [UIColor \
 colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
