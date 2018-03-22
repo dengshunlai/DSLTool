@@ -14,12 +14,39 @@
 - (UIImage *)dsl_imageWithMultiple:(CGFloat)multiple
 {
     CGFloat scale = self.scale;
-    NSInteger width = self.size.width * multiple;
-    NSInteger height = self.size.height * multiple;
+    CGFloat width = self.size.width * multiple;
+    CGFloat height = self.size.height * multiple;
     CGSize size = CGSizeMake(width, height);
     
     UIGraphicsBeginImageContextWithOptions(size, NO, scale);
     [self drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
+- (UIImage *)dsl_imageWithSize:(CGSize)size
+{
+    CGFloat scale = [UIScreen mainScreen].scale;
+    CGFloat width = self.size.width * self.scale;
+    CGFloat height = self.size.height * self.scale;
+    if (size.width * scale > width || size.height * scale > height) {
+        return self;
+    }
+    CGFloat dWidth = width - size.width * scale;
+    CGFloat dHeight = height - size.height * scale;
+    CGSize newSize;
+    if (dWidth < dHeight) {
+        CGFloat newWith = size.width;
+        CGFloat newHeight = size.width * height / width;
+        newSize = CGSizeMake(newWith, newHeight);
+    } else {
+        CGFloat newHeight = size.height;
+        CGFloat newWith = size.height * width / height;
+        newSize = CGSizeMake(newWith, newHeight);
+    }
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, scale);
+    [self drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return newImage;

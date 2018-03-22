@@ -20,6 +20,13 @@
 - (UIImage *)dsl_imageWithMultiple:(CGFloat)multiple;
 
 /**
+ 将过大的图像缩小
+ 
+ @param size 图像的期望大小
+ */
+- (UIImage *)dsl_imageWithSize:(CGSize)size;
+
+/**
  镜像
 
  @param orientation UIImageOrientation
