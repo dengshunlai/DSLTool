@@ -88,14 +88,17 @@
             if (strcmp(number.objCType, @encode(int)) == 0) {
                 code = [NSString stringWithFormat:@"@property (assign, nonatomic) NSInteger %@;",key];
             }
-            if (strcmp(number.objCType, "c") == 0) {
+            if (strcmp(number.objCType, @encode(long long)) == 0) {
+                code = [NSString stringWithFormat:@"@property (assign, nonatomic) NSInteger %@;",key];
+            }
+            if (strcmp(number.objCType, @encode(bool)) == 0) {
                 code = [NSString stringWithFormat:@"@property (assign, nonatomic) BOOL %@;",key];
             }
             if (strcmp(number.objCType, @encode(float)) == 0) {
                 code = [NSString stringWithFormat:@"@property (assign, nonatomic) CGFloat %@;",key];
             }
             if (strcmp(number.objCType, @encode(double)) == 0) {
-                code = [NSString stringWithFormat:@"@property (assign, nonatomic) double %@;",key];
+                code = [NSString stringWithFormat:@"@property (assign, nonatomic) CGFloat %@;",key];
             }
         } else {
             code = [NSString stringWithFormat:@"@property (strong, nonatomic) NSNull *%@;",key];
