@@ -144,24 +144,24 @@
 
 + (UIViewController *)findNextViewControllerFrom:(UIViewController *)vc {
     //递归
-    UIViewController *currentShowingVC;
+    UIViewController *nextVC;
     if ([vc presentedViewController]) {
         // 当前视图是被presented出来的
-        UIViewController *nextRootVC = [vc presentedViewController];
-        currentShowingVC = [self findNextViewControllerFrom:nextRootVC];
+        nextVC = [vc presentedViewController];
+        nextVC = [self findNextViewControllerFrom:nextVC];
     } else if ([vc isKindOfClass:[UITabBarController class]]) {
         // 根视图为UITabBarController
-        UIViewController *nextRootVC = [(UITabBarController *)vc selectedViewController];
-        currentShowingVC = [self findNextViewControllerFrom:nextRootVC];
+        nextVC = [(UITabBarController *)vc selectedViewController];
+        nextVC = [self findNextViewControllerFrom:nextVC];
     } else if ([vc isKindOfClass:[UINavigationController class]]){
         // 根视图为UINavigationController
-        UIViewController *nextRootVC = [(UINavigationController *)vc visibleViewController];
-        currentShowingVC = [self findNextViewControllerFrom:nextRootVC];
+        nextVC = [(UINavigationController *)vc visibleViewController];
+        nextVC = [self findNextViewControllerFrom:nextVC];
     } else {
         // 根视图为非导航类
-        currentShowingVC = vc;
+        nextVC = vc;
     }
-    return currentShowingVC;
+    return nextVC;
 }
 
 @end
