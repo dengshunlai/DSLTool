@@ -38,4 +38,40 @@
  */
 + (UIViewController *)topViewController;
 
+/**
+ 获取状态栏高度
+ */
++ (CGFloat)statusBarHeight;
+
+/**
+ 获取safeArea
+ */
++ (UIEdgeInsets)safeAreaInsets;
+
+/**
+ 获取safeAreaBottom
+ */
++ (CGFloat)safeAreaBottom;
+
+/**
+ 获取safeAreaTop
+ */
++ (CGFloat)safeAreaTop;
+
+/**
+ navigationBar + safeAreaTop
+ */
++ (CGFloat)navAddTopHeight;
+
+/**
+ tabbar + safeAreaBottom
+ */
++ (CGFloat)tabbarAddBottomHeight;
+
++ (UIWindow *)getKeyWindow;
+
++ (UIWindow *)getTopWindow;
+
++ (UIWindow *)getMainWindow;
+
 @end
