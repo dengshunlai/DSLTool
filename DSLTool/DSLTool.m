@@ -269,7 +269,7 @@
 + (CGFloat)safeAreaTop {
     CGFloat height = 0;
     if (@available(iOS 11, *)) {
-        height = [UIApplication sharedApplication].keyWindow.safeAreaInsets.bottom;
+        height = [UIApplication sharedApplication].keyWindow.safeAreaInsets.top;
     } else {
         height = [UIApplication sharedApplication].statusBarFrame.size.height;
     }
